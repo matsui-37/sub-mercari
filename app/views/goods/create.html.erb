@@ -1,0 +1,254 @@
+<body class="">
+
+  <div class="single-container">
+    <%= render partial: "/layouts/mark" %>
+
+    <main class="single-main">
+      <section class="l-single-container buy-item-container">
+        <div data-reactroot="">
+          <div class="sell-container-inner">
+            <h2 class="l-single-head">商品の情報を入力</h2>
+            <form class="sell-form">
+              <div class="sell-upload-box">
+                <h3 class="sell-upload-head">出品画像
+                  <span class="form-require">必須</span>
+                </h3>
+                <p>最大4枚までアップロードできます</p>
+                <div class="sell-dropbox-container clearfix">
+                  <div class="sell-upload-items">
+                    <ul></ul>
+                  </div>
+                  <div class="sell-upload-drop-box">
+                    <input type="file" class="sell-upload-drop-file" multiple="" name="image1" style="display: none;">
+                    <pre class="visible-pc">ドラッグアンドドロップまたはクリックしてファイルをアップロード</pre>
+                    <i class="icon-camera"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="sell-content">
+                <div class="form-group">
+                  <label>商品名
+                    <span class="form-require">必須</span>
+                  </label>
+                  <div>
+                    <input class="input-default" value="" placeholder="商品名（必須 40文字まで)">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>商品の説明
+                    <span class="form-require">必須</span>
+                  </label>
+                  <textarea class="textarea-default" rows="5" placeholder="商品の説明（必須 1,000文字以内）（色、素材、重さ、定価、注意点など）例）2010年頃に1万円で購入したジャケットです。ライトグレーで傷はありません。あわせやすいのでおすすめです。"></textarea>
+                </div>
+              </div>
+              <div class="sell-content clearfix">
+                <h3 class="sell-sub-head">商品の詳細</h3>
+                <div class="sell-form-box">
+                  <div class="form-group">
+                    <label>カテゴリー
+                      <span class="form-require">必須</span>
+                    </label>
+                    <div>
+                      <div class="select-wrap">
+                        <select class="select-default">
+                          <option value="">---</option>
+                          <option value="1">レディース</option>
+                          <option value="2">メンズ</option>
+                          <option value="3">ベビー・キッズ</option><option value="4">インテリア・住まい・小物</option>
+                          <option value="5">本・音楽・ゲーム</option>
+                          <option value="6">その他</option>
+                        </select>
+                        <%= fa_icon "angle-down" %>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>商品の状態
+                      <span class="form-require">必須</span>
+                    </label>
+                    <div class="select-wrap">
+                      <select class="select-default">
+                        <option value="">---</option>
+                        <option value="1">新品、未使用</option>
+                        <option value="2">未使用に近い</option>
+                        <option value="3">目立った傷や汚れなし</option>
+                        <option value="4">やや傷や汚れあり</option>
+                        <option value="5">傷や汚れあり</option>
+                        <option value="6">全体的に状態が悪い</option>
+                      </select>
+                      <%= fa_icon "angle-down" %>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sell-content clearfix">
+                <h3 class="sell-sub-head">配送について</h3>
+                <%= link_to "/jp/help_center/article/68/", target:"_blank", class: "form-question" do %>
+                  ?
+                <% end %>
+                <div class="sell-form-box">
+                  <div class="form-group">
+                    <label>配送料の負担
+                      <span class="form-require">必須</span>
+                    </label>
+                    <div class="select-wrap">
+                      <select class="select-default">
+                        <option value="">---</option>
+                        <option value="2">送料込み(出品者負担)</option>
+                        <option value="1">着払い(購入者負担)</option>
+                      </select>
+                      <%= fa_icon "angle-down" %>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>発送元の地域
+                      <span class="form-require">必須</span>
+                    </label>
+                    <div class="select-wrap">
+                      <select class="select-default">
+                        <option value="">---</option>
+                        <option value="1">北海道</option>
+                        <option value="2">青森県</option>
+                        <option value="3">岩手県</option>
+                        <option value="4">宮城県</option>
+                        <option value="5">秋田県</option>
+                        <option value="6">山形県</option>
+                        <option value="7">福島県</option>
+                        <option value="8">茨城県</option>
+                        <option value="9">栃木県</option>
+                        <option value="10">群馬県</option>
+                        <option value="11">埼玉県</option>
+                        <option value="99">未定</option>
+                      </select>
+                      <%= fa_icon "angle-down" %>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>発送までの日数
+                      <span class="form-require">必須</span>
+                    </label>
+                    <div class="select-wrap">
+                      <select class="select-default">
+                        <option value="">---</option>
+                        <option value="1">1~2日で発送</option>
+                        <option value="2">2~3日で発送</option>
+                        <option value="3">4~7日で発送</option>
+                      </select>
+                      <%= fa_icon "angle-down" %>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sell-content clearfix">
+                <h3 class="sell-sub-head">販売価格(300〜9,999,999)</h3>
+                <%= link_to "/jp/help_center/article/64/", target:"_blank", class: "form-question" do %>
+                  ?
+                <% end %>
+                <div class="sell-form-box">
+                  <ul class="sell-price">
+                    <li class="form-group">
+                      <div class="clearfix">
+                        <label class="l-left">価格
+                          <span class="form-require">必須</span>
+                        </label>
+                        <div class="l-right sell-price-input">¥
+                          <div>
+                            <input class="input-default" value="" placeholder="例）300">
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="l-left">販売手数料 (10%)</div>
+                      <div class="l-right">-</div>
+                    </li>
+                    <li class="clearfix bold">
+                      <div class="l-left">販売利益</div>
+                      <div class="l-right">-</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="modal" role="dialog" tabindex="-1">
+                <div class="modal-inner"></div>
+              </div>
+              <div class="sell-content sell-btn-box">
+                <div>
+                  <p>
+                    <%= link_to "/jp/help_center/getting_started/prohibited_items/", target:"_blank" do %>
+                      禁止されている出品
+                    <% end %>
+                    、
+                    <%= link_to "/jp/help_center/getting_started/prohibited_conduct/", target:"_blank" do %>
+                      行為
+                    <% end %>
+                      を必ずご確認ください。
+                  </p>
+                  <p>またブランド品でシリアルナンバー等がある場合はご記載ください。
+                    <%= link_to "/jp/help_center/getting_started/counterfeit_goods/", target:"_blank" do %>
+                      偽ブランドの販売
+                    <% end %>
+                    は犯罪であり処罰される可能性があります。
+                  </p>
+                  <p>また、出品をもちまして
+                    <%= link_to "/jp/seller_terms/", target:"_blank" do %>
+                      加盟店規約
+                    <% end %>
+                      に同意したことになります。
+                  </p>
+                </div>
+                <button type="submit" class="btn-default btn-red">出品する</button>
+                <a class="btn-default btn-gray">もどる</a>
+              </div>
+            </form>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%= render partial: "/layouts/rule" %>
+  </div>
+
+  <!-- 出品画像 -->
+  <script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/ec.js"></script>
+
+  <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+
+  <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+
+  <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-KLPT5L5"></script>
+
+  <script src="//www-mercari-jp.akamaized.net/assets/js/sell.js?1722458878"></script>
+
+  <script>
+    render({
+    www_url: 'https://www.mercari.com/jp/',
+    item_url: 'https://item.mercari.com/jp/',
+    region: 'jp',
+    locale: 'ja_JP'
+           }, 'e8b490eb5f6133ac012a955027d41947374352f7cbd5f7acc90f6da578195e90463c6fd76e8841197e2a1b01e2435a10c62e292611d500610d004240dd8aa9660', '8952d2f90f7638e3da32e089986e5496');
+  </script>
+
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+    'event': 'sell',
+    'uid': '443959793'
+    });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KLPT5L5');</script>
+  <!-- End Google Tag Manager -->
+<script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/880621981/?random=1541324925974&amp;cv=9&amp;fst=1541324925974&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;eid=659255991&amp;u_h=1050&amp;u_w=1680&amp;u_ah=1027&amp;u_aw=1680&amp;u_cd=24&amp;u_his=12&amp;u_tz=540&amp;u_java=false&amp;u_nplug=3&amp;u_nmime=4&amp;gtm=2wgas3&amp;sendb=1&amp;frm=0&amp;url=https%3A%2F%2Fwww.mercari.com%2Fjp%2Fsell%2F&amp;ref=https%3A%2F%2Fwww.mercari.com%2Fjp%2Fmypage%2F&amp;tiba=%E5%87%BA%E5%93%81%20-%20%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%20%E3%82%B9%E3%83%9E%E3%83%9B%E3%81%A7%E3%81%8B%E3%82%93%E3%81%9F%E3%82%93%20%E3%83%95%E3%83%AA%E3%83%9E%E3%82%A2%E3%83%97%E3%83%AA&amp;async=1&amp;rfmt=3&amp;fmt=4"></script>
+
+
+
+</body>
+
+

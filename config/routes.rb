@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
   root 'goods#index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  resources :goods, only: [:show, :create] do
+  end
+
+  resources :users, only: :index do
+  end
 end

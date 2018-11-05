@@ -1,0 +1,59 @@
+<div class="default-container ">
+  <header class="pc-header visible-pc">
+    <div class="pc-header-inner">
+      <div class="clearfix">
+        <h1 class="l-left">
+          <%= link_to root_path do %>
+            <%= image_tag "//www-mercari-jp.akamaized.net/assets/img/common/common/logo.svg?2960600120", alt: "mercari", width: "134", height: "36" %>
+          <% end %>
+        </h1>
+
+        <form action="https://www.mercari.com/jp/search/" class="pc-header-form l-right">
+          <input type="search" name="keyword" value="" placeholder="キーワードから探す" class="input-default">
+          <%= fa_icon "search" %>
+        </form>
+      </div>
+
+      <div class="pc-header-nav-box clearfix">
+        <nav class="l-left">
+          <ul class="pc-header-nav">
+             <li>
+              <h2>
+                <%= link_to "#",  class: "pc-header-nav-root" do %>
+                  カテゴリーから探す
+                <% end %>
+              </h2>
+              <ul class ="pc-header-nav-parent-wrap" data-mega="1" style="width: auto;">
+                <li></li>
+              </ul>
+            </li>
+                         <li>
+              <h2>
+                <%= link_to "#",  class: "pc-header-nav-root" do %>
+                  ブランドから探す
+                <% end %>
+              </h2>
+              <ul class ="pc-header-nav-parent-wrap" data-mega="1" style="width: auto;">
+                <li></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="l-right">
+          <ul class="pc-header-login-nav">
+            <li>
+              <%= link_to "https://www.mercari.com/jp/login/?login_callback=https%3A%2F%2Fwww.mercari.com%2Fjp%2F", class: "sp-header-btn btn-red" do %>
+                ログイン
+              <% end %>
+            </li>
+            <li>
+              <%= link_to "https://www.mercari.com/jp/signup/", class: "sp-header-btn header-signup" do %>
+                新規会員登録
+              <% end %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
