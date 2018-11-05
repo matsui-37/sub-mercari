@@ -1,0 +1,328 @@
+<body class="">
+  <%= render partial: "/layouts/header" %>
+  <%= render partial: "/layouts/bread-crumbs" %>
+
+
+  <section class="item-box-container l-single-container">
+    <h1 class="item-name">ラルフローレン パーカー 90</h1>
+    <p class="item-wording">『ラルフローレン パーカー 90』は、21回の取引実績を持つ
+      <%= link_to "#" do %> manan✳︎ <% end %>さんから出品されました。
+      <%= link_to "https://www.mercari.com/jp/brand/1280/" do %> ラルフ ローレン <% end %>
+      （<%= link_to "https://www.mercari.com/jp/category/1309/" do %> トップス/ベビー・キッズ<% end %>）の商品で、福岡県から4~7日で発送されます。
+    </p>
+    <div class="item-main-content clearfix">
+      <div class="item-photo">
+        <div class="owl-carousel owl-loaded owl-drag">
+          <div class="owl-stage-outer">
+            <div class="owl-stage" style="left: 0px; width: 600px;">
+              <div class="owl-item active" style="width: 300px;">
+                <div class="owl-item-inner is-higher-width">
+                  <%= image_tag "https://static-mercari-jp-imgtr2.akamaized.net/item/detail/orig/photos/m54177862156_1.jpg?1541130328", alt: "ラルフローレン パーカー 90", class: "owl-lazy", style: "opacity: 1" %>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 300px;">
+                <div class="owl-item-inner is-higher-width">
+                  <%= image_tag "https://static-mercari-jp-imgtr2.akamaized.net/item/detail/orig/photos/m54177862156_2.jpg?1541130328", alt: "ラルフローレン パーカー 90", class: "owl-lazy" %>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="owl-nav disabled">
+            <div class="owl-prev">prev</div>
+            <div class="owl-next">next</div>
+          </div>
+          <div class="owl-dots">
+            <div class="owl-dot active"><span></span>
+              <div class="owl-dot-inner">
+                <%= image_tag "https://static-mercari-jp-imgtr2.akamaized.net/item/detail/orig/photos/m54177862156_1.jpg?1541130328", class: "is-higher-width" %>
+              </div>
+            </div>
+            <div class="owl-dot"><span></span>
+              <div class="owl-dot-inner">
+                <%= image_tag "https://static-mercari-jp-imgtr2.akamaized.net/item/detail/orig/photos/m54177862156_2.jpg?1541130328", class: "is-higher-width" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <table class="item-detail-table">
+        <tbody>
+          <tr>
+            <th>出品者</th>
+            <td>
+              <%= link_to "https://www.mercari.com/jp/u/160569215/" do %>
+                manan✳︎
+              <% end %>
+              <div>
+                <div class="item-user-ratings">
+                  <%= fa_icon "grin-alt" %>
+                  <span>21</span>
+                </div>
+                <div class="item-user-ratings">
+                  <%= fa_icon "meh" %>
+                  <span>0</span>
+                </div>
+                <div class="item-user-ratings">
+                  <%= fa_icon "frown" %>
+                  <span>0</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>カテゴリー</th>
+            <td>
+              <div>ベビー・キッズ</div>
+              <%= link_to "https://www.mercari.com/jp/category/1307/" do %>
+                <div class="item-detail-table-sub-category">
+                  <%= fa_icon "angle-right" %>
+                    ベビー服(男女兼用)  ~95cm
+                </div>
+              <% end %>
+              <%= link_to "https://www.mercari.com/jp/category/1309/" do %>
+                <div class="item-detail-table-sub-sub-category">
+                  <%= fa_icon "angle-right" %>
+                    トップス
+                </div>
+              <% end %>
+            </td>
+          </tr>
+          <tr>
+            <th>ブランド</th>
+            <td>
+              <%= link_to "https://www.mercari.com/jp/brand/1280/" do %>
+                <div>
+                  ラルフ ローレン
+                </div>
+              <% end %>
+            </td>
+          </tr>
+          <tr>
+            <th>商品のサイズ</th>
+            <td>90cm</td>
+          </tr>
+          <tr>
+            <th>商品の状態</th>
+            <td>目立った傷や汚れなし</td>
+          </tr>
+          <tr>
+            <th>配送料の負担</th>
+            <td>送料込み(出品者負担)</td>
+          </tr>
+          <tr>
+            <th>配送の方法</th>
+            <td>未定</td>
+          </tr>
+          <tr>
+            <th>配送元地域</th>
+            <td>
+              <%= link_to "https://www.mercari.com/jp/area/40/" do %>
+                福岡県
+              <% end %>
+            </td>
+          </tr>
+          <tr>
+            <th>発送日の目安</th>
+            <td>4~7日で発送</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="item-price-box text-center">
+      <span class="item-price bold">¥ 1,300</span>
+      <span class="item-tax"> (税込)</span>
+      <span class="item-shipping-fee">送料込み</span>
+    </div>
+
+    <%= link_to "https://www.mercari.com/jp/login/?login_callback=https%3A%2F%2Fwww.mercari.com%2Fjp%2Ftransaction%2Fbuy%2Fm54177862156%2F", data: {client: "hidden"}, class: "item-buy-btn f18-24" do %>
+      購入画面に進む
+    <% end %>
+
+    <%= link_to "https://www.mercari.com/jp/login/?login_callback=https%3A%2F%2Fwww.mercari.com%2Fjp%2Ftransaction%2Fbuy%2Fm54177862156%2F", class: "item-btn-client" do %>
+      <div data-client="visible">
+        購入画面に進む
+      </div>
+    <% end %>
+
+    <a class=" item-action-text" data-toggle="open-app" data-url-scheme="mercari://" data-action="item/openDetail" data-key="id=m54177862156" data-play-id="com.kouzoh.mercari" data-adjust-url="http://app.adjust.io/xio2ii?campaign=iOS&amp;adgroup=items.buy_button1">
+    アプリで購入
+    </a>
+
+    <div class="item-description f14">
+      <p class="item-description-inner">✳︎ラルフローレン
+        ✳︎size 90
+
+        ネイビーにオレンジの刺繍です。
+        ネイビー特有の色落ち具合もありますが、
+        形は綺麗です。</p>
+    </div>
+
+    <div class="item-button-container clearfix">
+      <div class="item-button-left">
+        <%= link_to "https://www.mercari.com/jp/login/?login_callback=https://item.mercari.com/jp/m54177862156/&amp;login_message=like", class: "item-button item-button-like" do %>
+          <i class="far fa-heart"></i>
+          <span>いいね!</span>
+          <span data-num="like">0</span>
+        <% end %>
+
+        <%= link_to "https://www.mercari.com/jp/login/?login_callback=https%3A%2F%2Fwww.mercari.com%2Fjp%2Freport%2Fm54177862156%2F", class: "item-button item-button-report clearfix" do %>
+          <%= fa_icon "flag-checkered" %>
+          <span>不適切な商品の報告</span>
+        <% end %>
+      </div>
+      <div class="item-button-right">
+        <%= link_to "https://www.mercari.com/jp/safe/description/", target:"_blank" do %>
+          <%= fa_icon "lock" %>
+          <span>あんしん・あんぜんへの取り組み</span>
+        <% end %>
+      </div>
+    </div>
+  </section>
+
+  <div class="item-detail-message">
+    <div class="message-container">
+    </div>
+  </div>
+
+  <ul class="nav-item-link-prev-next clearfix">
+    <li class="nav-item-link-prev">
+      <%= link_to "https://item.mercari.com/jp/m81815881049/" do %>
+        <%= fa_icon "angle-left" %>
+          ハワイアン シルバーリング
+      <% end %>
+    </li>
+    <li class="nav-item-link-next">
+      <%= link_to "https://item.mercari.com/jp/m10688027591/" do %>
+        短期速効おむつはずれ : 2才・3才が勝負! : ママ&amp;パパの実感アドバイス
+        <%= fa_icon "angle-right" %>
+      <% end %>
+    </li>
+  </ul>
+
+  <div class="item-social-media-box">
+    <div class="text-center">
+      <div class="fb-save fb_iframe_widget" data-uri="product://113299479059860/m54177862156" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=466308336793848&amp;container_width=700&amp;locale=ja_JP&amp;sdk=joey&amp;uri=product%3A%2F%2F113299479059860%2Fm54177862156">
+        <span style="vertical-align: top; width: 0px; height: 0px; overflow: hidden;">
+          <iframe name="f3517d547458594" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:save Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/save.php?app_id=466308336793848&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F__Bz3h5RzMx.js%3Fversion%3D42%23cb%3Df1496a0dae9ff24%26domain%3Ditem.mercari.com%26origin%3Dhttps%253A%252F%252Fitem.mercari.com%252Ff70c7f42431038%26relation%3Dparent.parent&amp;container_width=700&amp;locale=ja_JP&amp;sdk=joey&amp;uri=product%3A%2F%2F113299479059860%2Fm54177862156" style="border: none; visibility: visible; width: 0px; height: 0px;">
+          </iframe>
+        </span>
+      </div>
+    </div>
+    <ul class="social-media-box">
+      <li>
+        <%= link_to "http://www.facebook.com/share.php?u=https%3A%2F%2Fitem.mercari.com%2Fjp%2Fm54177862156%2F", target:"_blank", class: "share-btn", data: {window: {name: "facebook_window"}} do %>
+          <i class="fab fa-facebook-square"></i>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to "http://twitter.com/share?count=horizontal&amp;original_referer=https%3A%2F%2Fitem.mercari.com%2Fjp%2Fm54177862156%2F&amp;text=%E3%83%A9%E3%83%AB%E3%83%95%E3%83%AD%E3%83%BC%E3%83%AC%E3%83%B3%20%E3%83%91%E3%83%BC%E2%80%A6%20%28%C2%A5%201%2C300%29%20https%3A%2F%2Fitem.mercari.com%2Fjp%2Fm54177862156%2F%20%E3%83%95%E3%83%AA%E3%83%9E%E3%82%A2%E3%83%97%E3%83%AA%E3%80%8C%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%E3%80%8D%E3%81%A7%E8%B2%A9%E5%A3%B2%E4%B8%AD%E2%99%AA%20%23%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%20%40mercari_jp%E3%81%95%E3%82%93%E3%81%8B%E3%82%89", target:"_blank", class: "share-btn", data: {window: {name: "twitter_window"}} do %>
+          <i class="fab fa-twitter"></i>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to "http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fitem.mercari.com%2Fjp%2Fm54177862156%2F&amp;media=https%3A%2F%2Fstatic-mercari-jp-imgtr2.akamaized.net%2Fitem%2Fdetail%2Forig%2Fphotos%2Fm54177862156_1.jpg%3F1541130328&amp;description=%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%E5%95%86%E5%93%81%3A%20%E3%83%A9%E3%83%AB%E3%83%95%E3%83%AD%E3%83%BC%E3%83%AC%E3%83%B3%20%E3%83%91%E3%83%BC%E3%82%AB%E3%83%BC%2090%20%23%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA", target:"_blank", class: "share-btn", data: {window: {name: "pinterest_window"}} do %>
+          <i class="fab fa-pinterest"></i>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+
+
+
+  <div class="items-in-user-profile">
+    <section class="items-box-container clearfix items-box-overflow items-in-user-profile">
+      <h2 class="items-box-head">
+        <%= link_to "https://www.mercari.com/jp/u/160569215/" do %>
+          manan✳︎さんのその他の出品
+        <% end %>
+      </h2>
+
+      <div class="items-box-content clearfix">
+        <section class="items-box">
+          <%= link_to "https://item.mercari.com/jp/m68555579505/" do %>
+            <figure class="items-box-photo">
+              <%= image_tag "https://static-mercari-jp-imgtr2.akamaized.net/thumb/photos/m68555579505_1.jpg?1540994222", alt: "アメリカンアパレル パンツ", class: "is-higher-width lazyloaded" %>
+            </figure>
+            <div class="items-box-body">
+              <h3 class="items-box-name font-2">アメリカンアパレル パンツ</h3>
+              <div class="items-box-num clearfix">
+                <div class="items-box-price font-5">¥ 1,000</div>
+                <p class="item-box-tax">(税込)</p>
+              </div>
+            </div>
+          <% end %>>
+        </section>
+        <section class="items-box">
+          <%= link_to "https://item.mercari.com/jp/m19364773480/" do %>
+            <figure class="items-box-photo">
+              <%= image_tag "https://static-mercari-jp-imgtr2.akamaized.net/thumb/photos/m19364773480_1.jpg?1540525089", alt: "ZARA✳︎ターバン✳︎", class: "is-higher-width lazyloaded" %>
+            </figure>
+            <div class="items-box-body">
+              <h3 class="items-box-name font-2">ZARA✳︎ターバン✳︎</h3>
+              <div class="items-box-num clearfix">
+                <div class="items-box-price font-5">¥ 1,100</div>
+                <div class="items-box-likes font-2">
+                  <i class="far fa-heart"></i>
+                  <span>2</span>
+                </div>
+                <p class="item-box-tax">(税込)</p>
+              </div>
+            </div>
+          <% end %>
+        </section>
+      </div>
+    </section>
+
+    <section class="items-box-container clearfix items-box-overflow">
+      <h2 class="items-box-head">
+        <%= link_to "https://www.mercari.com/jp/brand/1280/1309/" do %>
+          ラルフ ローレンのトップス その他の商品
+        <% end %>
+      </h2>
+
+      <div class="items-box-content clearfix">
+        <section class="items-box">
+          <%= link_to "https://item.mercari.com/jp/m39513858036/" do %>
+            <figure class="items-box-photo">
+              <%= image_tag "https://static-mercari-jp-imgtr2.akamaized.net/thumb/photos/m39513858036_1.jpg?1541129610", alt: "ラルフローレン パーカー 80", class: "lazyloaded" %>
+            </figure>
+            <div class="items-box-body">
+              <h3 class="items-box-name font-2">ラルフローレン パーカー 80</h3>
+              <div class="items-box-num clearfix">
+                <div class="items-box-price font-5">¥ 1,800</div>
+                <div class="items-box-likes font-2">
+                  <i class="far fa-heart"></i>
+                    <span>1</span>
+                </div>
+                <p class="item-box-tax">(税込)</p>
+              </div>
+            </div>
+          <% end %>
+        </section>
+        <section class="items-box">
+          <%= link_to "https://item.mercari.com/jp/m11260632542/" do %>
+            <figure class="items-box-photo">
+              <%= image_tag "https://static-mercari-jp-imgtr2.akamaized.net/thumb/photos/m11260632542_1.jpg?1540353344", alt: "ラルフローレン リバーシブル パーカー＊70cm", class: "lazyload" %>
+            </figure>
+            <div class="items-box-body">
+              <h3 class="items-box-name font-2">ラルフローレン リバーシブル パーカー＊70cm</h3>
+              <div class="items-box-num clearfix">
+                <div class="items-box-price font-5">¥ 1,080</div>
+                <div class="items-box-likes font-2">
+                  <i class="far fa-heart"></i>
+                  <span>2</span>
+                </div>
+                <p class="item-box-tax">(税込)</p>
+              </div>
+            </div>
+          <% end %>
+        </section>
+      </div>
+    </section>
+  </div>
+
+  <%= render partial: "/layouts/aside" %>
+
+  <%= render partial: "/layouts/footer" %>
+</body>

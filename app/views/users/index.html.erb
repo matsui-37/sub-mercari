@@ -1,0 +1,129 @@
+<body class="">
+  <%= render partial: "/layouts/header" %>
+  <%= render partial: "/layouts/bread-crumbs" %>
+
+
+  <main class=" l-container clearfix">
+    <div class="l-content">
+      <section class="mypage-user-icon">
+        <%= link_to "https://www.mercari.com/jp/u/443959793/" do %>
+          <figure>
+            <%= image_tag "//static-mercari-jp-imgtr2.akamaized.net/images/member_photo_noimage_thumb.png", alt: "", width: "60", height: "60" %>
+          </figure>
+          <h2 class="bold">ffff</h2>
+          <div class="mypage-number">
+            <div>評価 <span class="bold">0</span></div>
+            <div>出品数 <span class="bold">0</span></div>
+          </div>
+        <% end %>
+      </section>
+
+      <section class="mypage-tab-container-notification-todo">
+        <ul class="mypage-tabs">
+          <li class="active">
+            <h3>
+              <%= link_to "#mypage-tab-notification", data: {toggle: "tab"} do %>
+                お知らせ
+                <span class="mypage-nav-number hidden-large">
+                  6
+                </span>
+              <% end %>
+            </h3>
+          </li>
+          <li class="">
+            <h3>
+              <%= link_to "#mypage-tab-todo", data: {toggle: "tab"} do %>
+                やることリスト
+              <% end %>
+            </h3>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <ul id="mypage-tab-notification" class="mypage-item-list tab-pane active">
+            <li>
+              <%= link_to "https://www.mercari.com/jp/mypage/point/", class: "mypage-item-link" do %>
+                <figure>
+                  <%= image_tag "//static-mercari-jp.akamaized.net/images/mercari_profile.png", alt: "", class: "lazyloaded" %>
+                </figure>
+                <div class="mypage-item-body">
+                  <div class="mypage-item-text">有効期限が近づいているポイントがあります</div>
+                  <time>
+                    <i class="far fa-clock"></i>
+                    <span>1 日前</span>
+                  </time>
+                </div>
+                <%= fa_icon "angle-right" %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to "https://www.mercari.com/jp/mypage/news/", class: "mypage-item-link" do %>
+                <figure>
+                  <%= image_tag "//static-mercari-jp-imgtr2.akamaized.net/images/mercari_profile.png", alt: "", class: "lazyloaded" %>
+                </figure>
+                <div class="mypage-item-body">
+                  <div class="mypage-item-text">事務局から個別メッセージ「【P300進呈】ご登録ありがとうございます！メルカリでのお買い物をお楽しみください♪」</div>
+                  <time><i class="far fa-clock"></i><span>3 日前</span></time>
+                </div>
+                <%= fa_icon "angle-right" %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to "", data: {open: "modal", modal: "banner"}, class: "mypage-item-link" do %>
+                <figure>
+                  <%= image_tag "//static-mercari-jp-imgtr2.akamaized.net/images/mercari_profile.png", alt: "", class: "lazyloaded" %>
+                </figure>
+                <div class="mypage-item-body">
+                  <div class="mypage-item-text">【メルカリ安心への取り組み】商品代金は、取引完了まで事務局が大切にお預かりいたします</div>
+                  <time><i class="far fa-clock"></i><span>4 日前</span></time>
+                </div>
+                <%= fa_icon "angle-right" %>
+              <% end %>
+            </li>
+            <li class="mypage-go-list">
+              <%= link_to "/jp/mypage/notification/" do %>
+                一覧を見る
+              <% end %>
+            </li>
+          </ul>
+          <ul id="mypage-tab-todo" class="mypage-item-list tab-pane">
+            <li class="mypage-item-not-found bold">現在、やることリストはありません</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mypage-tab-container">
+        <h2 class="mypage-tab-head">購入した商品</h2>
+        <ul class="mypage-tabs">
+          <li class="active">
+            <h3>
+              <%= link_to "#mypage-tab-transaction-now", data: {toggle: "tab"} do %>
+                取引中
+              <% end %>
+            </h3>
+          </li>
+          <li class="">
+            <h3>
+              <%= link_to "#mypage-tab-transaction-old", data: {toggle: "tab"} do %>
+                過去の取引
+              <% end %>
+            </h3>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <ul id="mypage-tab-transaction-now" class="mypage-item-list tab-pane active">
+            <li class="mypage-item-not-found bold">取引中の商品がありません</li>
+          </ul>
+          <ul id="mypage-tab-transaction-old" class="mypage-item-list tab-pane">
+            <li class="mypage-item-not-found bold">過去に取引した商品がありません</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <%= render partial: "l-side" %>
+  </main>
+
+  <%= render partial: "/layouts/aside" %>
+
+  <%= render partial: "/layouts/footer" %>
+</body>

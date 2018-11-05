@@ -299,7 +299,7 @@ button {
   }
 }
 
-.nav-item-link-prev-next .icon-arrow-right, .nav-user-link-prev-next .icon-arrow-right, .nav-item-link-prev-next .icon-arrow-left, .nav-user-link-prev-next .icon-arrow-left {
+.nav-item-link-prev-next .fa-angle-right, .nav-user-link-prev-next .fa-angle-right, .nav-item-link-prev-next .fa-angle-left, .nav-user-link-prev-next .fa-angle-left {
   position: absolute;
   top: 50%;
   -webkit-transform: translate(0, -50%);
@@ -311,7 +311,7 @@ button {
   padding: 0 0 0 14px;
 }
 
-.nav-item-link-prev .icon-arrow-left, .nav-user-link-prev .icon-arrow-left {
+.nav-item-link-prev .fa-angle-left, .nav-user-link-prev .fa-angle-left {
   left: 0;
 }
 
@@ -321,7 +321,7 @@ button {
   text-align: right;
 }
 
-.nav-item-link-next .icon-arrow-right, .nav-user-link-next .icon-arrow-right {
+.nav-item-link-next .fa-angle-right, .nav-user-link-next .fa-angle-right {
   right: 0;
 }
 
@@ -604,15 +604,15 @@ button {
 }
 
 
-.icon-like {
+.fa-heart {
   color: #ea352d;
 }
 
-.icon-like-border {
+.fa-heart {
   color: #ccc;
 }
 
-.icon-facebook {
+.fa-facebook-square {
   color: #fff;
   background: #385185;
   font-size: 18px;
@@ -630,13 +630,13 @@ button {
   font-size: 22px;
 }
 
-.icon-pinterest {
+.fa-pinterest {
   color: #fff;
   background: #aa262a;
   font-size: 18px;
 }
 
-.icon-twitter {
+.fa-twitter {
   color: #fff;
   background: #5d9dc9;
   font-size: 16px;
@@ -647,15 +647,15 @@ button {
   vertical-align: middle;
 }
 
-.icon-good {
+.fa-grin-alt {
   color: #ef5185;
 }
 
-.icon-normal {
+.fa-meh {
   color: #fba933;
 }
 
-.icon-bad {
+.fa-frown {
   color: #6ab5d8;
 }
 
@@ -1301,13 +1301,13 @@ h3 {
 .select-wrap {
   position: relative;
   background: #fff;
-  .icon-arrow-bottom {
+  .fa-angle-down {
     position: absolute;
     right: 16px;
     top: 50%;
     z-index: 2;
     color: #888;
-    font-size: 8px;
+    font-size: 20px;
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
   }
@@ -2588,7 +2588,7 @@ i {
   content: '\e003';
 }
 
-.icon-arrow-left:before {
+.fa-angle-left:before {
   content: '\e004';
 }
 
@@ -2652,7 +2652,7 @@ i {
   content: '\e013';
 }
 
-.icon-flag:before {
+.fa-flag-checkered:before {
   content: '\e014';
 }
 
@@ -2920,9 +2920,9 @@ i {
   a {
     color: #333;
   }
-  .icon-arrow-right {
+  .fa-angle-right {
     margin: 0 8px;
-    font-size: 9px;
+    font-size: 14px;
     color: #888;
   }
 }
@@ -6461,7 +6461,7 @@ html.modal-open, body.modal-open {
   position: relative;
   height: 155px;
   padding: 20px;
-  background: url("/jp/assets/img/mypage/user-bg.jpg?52408201");
+  background: url("user-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -6611,10 +6611,10 @@ html.modal-open, body.modal-open {
       vertical-align: middle;
     }
   }
-  .icon-time {
+  .fa-clock {
     margin: 0 8px 0 0;
   }
-  .icon-arrow-right {
+  .fa-angle-right {
     position: absolute;
     top: 50%;
     right: 16px;
@@ -6673,9 +6673,10 @@ html.modal-open, body.modal-open {
 
 .mypage-item-not-found {
   padding: 160px 0 60px;
-  background: url("/jp/assets/img/common/common/logo-gray-icon.svg?52408201");
+  background: url("mercari.png");
   background-repeat: no-repeat;
   background-position: center 40px;
+  background-size: 100px;
   text-align: center;
   font-size: 16px;
   color: #ccc;
@@ -6753,7 +6754,7 @@ html.modal-open, body.modal-open {
     background: #fafafa;
     text-decoration: none;
     opacity: 1;
-    .icon-arrow-right {
+    .fa-angle-right {
       -webkit-transform: translate(4px, -50%);
       transform: translate(4px, -50%);
       color: #333;
@@ -6778,11 +6779,12 @@ html.modal-open, body.modal-open {
       background: #eee;
     }
   }
-  .icon-arrow-right {
+  .fa-angle-right {
     position: absolute;
     top: 50%;
     right: 16px;
     color: #ccc;
+    font-size: 24px;
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
     -webkit-transition: all ease-out .2s;
